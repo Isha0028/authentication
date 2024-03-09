@@ -1,0 +1,78 @@
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh; /* This ensures the container takes the full height of the viewport */
+}
+.card {
+    margin-top: 2em;
+    padding: 1.5em 0.5em 0.5em;
+    border-radius: 2em;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  }
+  .card img {
+    width: 20%;
+    border-radius: 50%;
+    margin: 0 auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+  .card .card-title {
+    font-weight: 700;
+    font-size: 1.5em;
+  }
+  .card .btn {
+    border-radius: 2em;
+    background-color: teal;
+    color: #ffffff;
+    padding: 0.5em 1.5em;
+  }
+  .card .btn:hover {
+    background-color: rgba(0, 128, 128, 0.7);
+    color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  }
+
+  .profile-pic {
+    color: transparent;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: all 0.3s ease;
+  }
+  .profile-pic input {
+    display: none;
+  }
+  .profile-pic img {
+    position: absolute;
+    object-fit: cover;
+    width: 165px;
+    height: 165px;
+    box-shadow: 0 0 10px 0 rgba(255, 255, 255, 0.35);
+    border-radius: 100px;
+    z-index: 0;
+  }
+  .profile-pic .-label {
+    cursor: pointer;
+    height: 165px;
+    width: 165px;
+  }
+  .profile-pic:hover .-label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 10000;
+    color: #fafafa;
+    transition: background-color 0.2s ease-in-out;
+    border-radius: 100px;
+    margin-bottom: 0;
+  }
+  .profile-pic span {
+    display: inline-flex;
+    padding: 0.2em;
+    height: 2em;
+  }
+  
